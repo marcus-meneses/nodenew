@@ -1,0 +1,66 @@
+GET http://localhost:3000/common
+
+###
+
+GET http://localhost:3000/common/5f5af076254e8b7c0edba7e8
+
+###
+
+POST http://localhost:3000/common
+Content-Type: application/json
+
+{
+    "name":"Marcus", 
+    "description":"Nicey fella"
+
+}
+
+###
+
+DELETE http://localhost:3000/common/5f5af076254e8b7c0edba7e8
+
+
+###
+
+PATCH http://localhost:3000/common/5f5af076254e8b7c0edba7e8
+Content-Type: application/json
+
+{
+
+    "description":"Nicey fella2"
+
+}
+
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username":"MarcusMeneses", 
+    "password":"$mvmM1985"
+
+}
+
+###
+
+GET http://localhost:3000/auth/users
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGVhcmFuY2UiOiJCQVNJQyIsIm5hbWUiOiJNYXJjdXMiLCJ1c2VybmFtZSI6Ik1hcmN1c01lbmVzZXMiLCJpZCI6IjVmNjEyZTAzMzNjZDAwNDQ5MDZiMTJhOSIsImlhdCI6MTYwMDMwMDQwNX0.oDcatgDXOmZohs47_VK9Yqt_aDhc1X2Y2XenWZN5GDs
+
+###
+
+POST http://localhost:3000/auth/new
+Content-Type: application/json
+
+{
+    "name":"Marcus", 
+    "username": "MarcusMeneses",
+    "password" :  "$abcdef"
+}
+
+###
+
+GET http://localhost:3000/auth/clean
+
